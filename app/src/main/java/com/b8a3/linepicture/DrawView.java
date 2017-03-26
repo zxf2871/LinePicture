@@ -11,6 +11,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.view.ViewTreeObserver;
 
 public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Runnable {
@@ -185,19 +186,19 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Run
     }
 
 
-    public void setmStartCount(int mStartCount) {
+    public void setStartCount(int mStartCount) {
         this.mStartCount = mStartCount;
     }
 
-    public void setmEndCount(int mEndCount) {
+    public void setEndCount(int mEndCount) {
         this.mEndCount = mEndCount;
     }
 
-    public void setmLineColor(int mLineColor) {
+    public void setLineColor(int mLineColor) {
         this.mLineColor = mLineColor;
     }
 
-    public void setmBackground(int mBackground) {
+    public void setBackground(int mBackground) {
         this.mBackground = mBackground;
     }
 
