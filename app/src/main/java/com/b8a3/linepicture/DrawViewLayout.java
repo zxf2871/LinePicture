@@ -274,10 +274,10 @@ public class DrawViewLayout extends LinearLayout {
 
                 while (mIsDrawing) {
                     endX = (int) (mEndRadius * Math.cos(endR) + centerX);
-                    endY = (int) (centerY - mRadius * Math.sin(endR));
+                    endY = (int) (centerY - mEndRadius * Math.sin(endR));
 
                     startX = (int) (mStartRadius * Math.cos(startR) + centerX);
-                    startY = (int) (centerY - mRadius * Math.sin(startR));
+                    startY = (int) (centerY - mStartRadius * Math.sin(startR));
 
                     mPatternPath.moveTo(startX, startY);
                     mPatternPath.lineTo(endX, endY);
